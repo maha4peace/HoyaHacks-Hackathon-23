@@ -1,0 +1,34 @@
+body {
+  text-align: center;
+}
+
+.resized-button {
+  max-width: fit-content;
+  padding: 20px;
+  margin: 50%;
+  
+}
+
+.img-button {
+  position:absolute
+
+}
+
+#streaming-button {
+  text-align: center;
+  color: blue; 
+  margin-top: 70%;
+  padding: 1em;
+  margin: 2em;
+}
+
+button {
+  position: relative;
+}
+
+img {
+  position: absolute;
+  top: 0; /* top of the button */
+  left: 0; /* left of the button */
+  
+}
