@@ -54,7 +54,7 @@ h1 {
 
 #bell-alert:active {
   background-color: lightgreen;
-  transform: scale(2.5);
+  transform: scale(2);
 }
 
 button {
@@ -99,10 +99,14 @@ img {
 
 #video {
   margin-left: 5em;
-  
-  
+  position: relative;
+  width: 80%;
+  height: auto;
 }
+
+
+
 #streaming-group {
-  display: flex
+  display: flex;
   
 }
