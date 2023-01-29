@@ -12,36 +12,36 @@
     <main >
     <h1> Free the Bikers </h1>
         <div id="streaming-group"> 
-            <video id="video" controls="controls"> </video>
+            <video id="video" controls="controls" poster="videosc.png" src="funnyvideodriving.mp4" > </video>
             
-            <button id="streaming-button" type="submit" onclick="showMessage()"> 
+            <button id="streaming-button" onclick="videoPlay()" type="submit"> 
                 Start Streaming
             </button> 
         </div>
    
   
-        
+        <div class="container">
             <form class="alerts">
             
-                <button  type="submit" id="left-arrow" >
+                <button  type="submit" id="left-arrow" class="btn" >
                     <img  src="blueleftarrow.png" alt="leftarrow"/>
                     <br> Turning Left
                 </button>
                 
-                <button  type="submit" id="right-arrow" >
+                <button  type="submit" id="right-arrow" class="btn" >
                     <img src="rightarrow.png" alt="rightarrow" />
                     <br> Turning Right
                 </button>
                 
-                <button type="submit" id="bell-alert">
+                <button onclick="clickProximity()" type="submit" id="bell-alert" class="btn">
                     <img  src="bell.png" alt="bell signal" />
                     <br> Proximity
                 </button>
-                
+              
             </form>
         
-        <img id="bicycle" src="bicycle.gif" alt="moving bicycle"/>
-        
+            <img class="footer" id="bicycle" src="bicycle.gif" alt="moving bicycle"/>
+        </div>
     </main>
 
     
@@ -49,5 +49,6 @@
 </body>
 
 <script src="main.js">  </script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
 
 </html>
