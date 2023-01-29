@@ -1,11 +1,15 @@
 body {
   text-align: center;
   background-color: lightblue
+
 }
+
 
 .alerts {
   margin: 3em;
+
 }
+
 
 h1 {
   color: red;
@@ -17,18 +21,12 @@ h1 {
   border-radius: 10em;
   margin-right: 50px;
   margin-left: 50px;
-  position: relative
+  position: relative;
  
 }
 
-.container {
-  display: grid;
-  grid-template-areas:
-        "header header"
-        "sidebar main"
-        "footer footer";
-  
-}
+
+
 
 #streaming-button {
   text-align: center;
@@ -43,7 +41,7 @@ h1 {
 }
 
 #streaming-button:active {
-  background-color: lightblue
+  background-color: lightgoldenrodyellow
 }
 
 #left-arrow:active {
@@ -56,6 +54,7 @@ h1 {
 
 #bell-alert:active {
   background-color: lightgreen;
+  transform: scale(2);
 }
 
 button {
@@ -91,6 +90,16 @@ img {
   border-radius: 35% ;
   border-left: 35% ;
   border-right: 55% ;
+  animation-name: bicyclerace 5s infinite; 
+}
+
+@keyframes lightsflashing {
+  0% {
+    transform: translateX(6px);
+  }
+  30% {
+    transform: translateX(6px);
+  }
 }
 
 #video {
