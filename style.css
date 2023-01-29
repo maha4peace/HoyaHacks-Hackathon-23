@@ -32,9 +32,9 @@ h1 {
   text-align: center;
   color: blue; 
   margin-top: 70%;
-  padding: 1em;
-  margin: 2em;
-  font-size:larger;
+  padding: 5em;
+  margin: 4em;
+  font-size:large;
   border-color: blue;
   border-style:inset;
   padding: 10px;
@@ -54,7 +54,7 @@ h1 {
 
 #bell-alert:active {
   background-color: lightgreen;
-  transform: scale(2);
+  transform: scale(2.5);
 }
 
 button {
@@ -65,7 +65,10 @@ button {
   border-left: 70%;
   border-right: 60% ;
   cursor: pointer; 
+  width: 100px;
+  height: 80px;
 }
+
 
 button:active {
   transform: translateY(5px) ;
@@ -78,32 +81,25 @@ img {
   left: 0; /* left of the button */
   z-index:1; 
   height: 45%;
-  padding-left: 25px;
+  padding-left: 10px;
   
 }
 
 #bicycle {
-  margin-top: 450px;
-  margin-left: 155px;
-  height: 250px;
-  width: 270px;
+  margin-top: 550px;
+  margin-left: 160px;
+  height: 200px;
+  width: 225px;
   border-radius: 35% ;
   border-left: 35% ;
   border-right: 55% ;
   animation-name: bicyclerace 5s infinite; 
 }
 
-@keyframes lightsflashing {
-  0% {
-    transform: translateX(6px);
-  }
-  30% {
-    transform: translateX(6px);
-  }
-}
 
 #video {
-  margin-left: 3em;
+  margin-left: 5em;
+  
   
 }
 #streaming-group {
