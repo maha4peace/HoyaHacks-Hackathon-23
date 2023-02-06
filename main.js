@@ -1,20 +1,30 @@
 
 
 
-  const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
-  const buttons = document.querySelectorAll("button");
+  const audio1 = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+  const audio2 = new Audio("bellalertsound.mp3");
+
+
   
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      audio.play();
-    });
+
+
+  const proximity = document.getElementById("bell-alert");
+  
+
+  const video = document.getElementById("video");
+  const playPauseButton = document.getElementById("streaming-button");
+  
+  playPauseButton.addEventListener("click", function() {
+    audio1.play();
+    if (video.paused) {
+      video.play();
+      playPauseButton.innerHTML = "Pause";  
+    } else {
+      video.pause();
+      playPauseButton.innerHTML = "Live Stream";
+    }
   });
+  
 
-  Window.alert("Got your helmet? ")
 
-const get= document.getElementById("video");
-get.play();
 
-function 
-    
-}
