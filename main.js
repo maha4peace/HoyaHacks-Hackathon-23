@@ -1,4 +1,4 @@
-const video = document.getElementById("video");
+  const video = document.getElementById("video");
   const playPauseButton = document.getElementById("streaming-button");
 
 
@@ -16,18 +16,24 @@ playPauseButton.addEventListener("click", () => {
   });
   
 
+
 function proximitySound() {
   const audio2 = new Audio("bellalertsound.mp3") ;
   const proximity = document.getElementById("bell-alert");
-  
-  proximity.addEventListener("click", () => {
-
+  proximity.addEventListener("click", () => { 
     audio2.play();
-
   });
+  video.addEventListener("timeupdate", () => {
+    if (video.currentTime == 16) {
+      proximity.click();
+    } else {
+      //otherwise continue playing video
+    }
+  })
 }
 
- proximitySound(); 
+
+proximitySound(); 
 
   
    
